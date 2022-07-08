@@ -1,4 +1,4 @@
-import java.util.Arrays;
+import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
@@ -7,7 +7,9 @@ import java.util.stream.Stream;
 public class Program2 {
 
 	public static void main(String[] args) {
-		System.out.println("Entre o número que deseja verificar se consta na sequência de Fibonacci: ");
+		
+		try {
+		System.out.println("Entre o número inteiro que deseja verificar se consta na sequência de Fibonacci: ");
 		Scanner sc = new Scanner(System.in);
 		Long numero = (long) sc.nextInt();
 
@@ -22,6 +24,14 @@ public class Program2 {
 		} else {
 			System.out.println("Esse número não consta na sequência de Fibonacci.");
 		}
+		
+		sc.close();
+		}
+		
+		catch (InputMismatchException e) {
+			System.out.println("Formato de entrada não suportado. Insira apenas um número inteiro.");
+		}
+		
 	}
 
 }

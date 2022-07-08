@@ -15,6 +15,7 @@ public class Program5 {
 		}
 		
 		System.out.println(saida);
+		sc.close();
 	}
 
 }
