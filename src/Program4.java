@@ -10,7 +10,7 @@ public class Program4 {
 	
 	double faturamentoTotal = faturamentoSP + faturamentoRJ + faturamentoMG + faturamentoES + faturamentoOutros;
 	
-	System.out.println("Percentual de representação do total de faturamento mensal da distribuidora de cada estado:");
+	System.out.println("Percentual de representação do total de faturamento mensal de cada estado:");
 	percentualEstado("SP", faturamentoSP, faturamentoTotal);
 	percentualEstado("RJ", faturamentoRJ, faturamentoTotal);
 	percentualEstado("MG", faturamentoMG, faturamentoTotal);
